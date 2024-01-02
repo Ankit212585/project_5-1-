@@ -1,0 +1,82 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 500px;
+    text-align: center;
+    margin: 40px 0 60px 0;
+    background-image: url(./pexels-steve-johnson-1545505.jpg);
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: 1px 1px 1px 1px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    background-color: azure;
+    transition: all ease 0.5s;
+}
+#search-input:hover{
+    box-shadow: 0 0 10px rgb(255, 222, 180),0 0 25px rgb(255, 222, 180),0 0 50px rgb(255, 222, 180),0 0 100px rgb(255, 222, 180);
+    transform: scale(1.1);
+    
+}
+form button{
+    padding: 10px 20px;
+    background-color:aqua;
+    font-size: 18px;
+    color: white;
+    border: 1px 1px 1px 1px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all ease 0.5s;
+    margin-left: 30px;
+    font-weight: bold;
+}
+form button:hover{
+    box-shadow: 0 0 5px aqua,0 0 15px aqua,0 0 25px aqua,0 0 100px aqua;
+    color: black;
+    transform: scale(1.1);
+}
+#search-results{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto ;
+     
+    cursor: pointer;
+}
+ 
+ 
+ 
+@media screen and (max-width: 768px) {
+    .screen-result{
+        width: 45%;
+    }  
+}
+
+@media screen and (max-width:480px) {
+    .screen-result{
+        width: 100%;
+    }
+}
